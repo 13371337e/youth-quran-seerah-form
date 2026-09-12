@@ -29,10 +29,18 @@ Fill out the form and submit — a row is appended to `backend/responses.csv`.
 
 ## Deploying the backend (Render.com)
 
+This is already deployed: **https://youth-quran-seerah-backend.onrender.com** (service `youth-quran-seerah-backend`
+in the "Mohammed's workspace" Render team, deploying from this repo's `main` branch, root dir `backend`).
+
+To set up a fresh instance elsewhere:
+
 1. Push this repo to GitHub.
 2. Go to render.com → sign in with GitHub → **New Web Service**.
 3. Connect the repo, set **Root Directory** to `backend`.
-4. Build command: `npm install`. Start command: `npm start`.
+4. Build command: `yarn install`. Start command: `yarn start`.
+   (Plain `npm install` hit a known npm bug — "Exit handler never called!" — on Render's free build tier,
+   where npm reported success without actually installing dependencies. Yarn avoided it. `npm install`
+   works fine locally.)
 5. Add an environment variable `ADMIN_KEY` set to a private password of your choosing (used to protect the
    CSV download link — see below). If you skip this, it defaults to `admin123`, which is not private.
 6. Deploy. Render gives you a URL like `https://your-app.onrender.com`.
@@ -49,7 +57,7 @@ write in `backend/server.js` for a persistent store (e.g. a Postgres add-on).
 2. Set `REACT_APP_BACKEND_URL` to your deployed backend URL before building:
    ```bash
    cd frontend
-   echo "REACT_APP_BACKEND_URL=https://your-app.onrender.com" > .env.production.local
+   echo "REACT_APP_BACKEND_URL=https://youth-quran-seerah-backend.onrender.com" > .env.production.local
    npm install
    npm run deploy      # builds and pushes the build/ folder to the gh-pages branch
    ```
@@ -60,7 +68,7 @@ write in `backend/server.js` for a persistent store (e.g. a Postgres add-on).
 ## Downloading responses
 
 ```
-https://your-app.onrender.com/api/download?key=YOUR_ADMIN_KEY
+https://youth-quran-seerah-backend.onrender.com/api/download?key=YOUR_ADMIN_KEY
 ```
 
 Open that URL in a browser (with the `ADMIN_KEY` you set on the backend) to download `responses.csv`, which
