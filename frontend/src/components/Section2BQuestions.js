@@ -4,13 +4,13 @@ import { FIVE_QUESTIONS } from "../data/formOptions";
 export default function Section2BQuestions({ data, specialSkill, onChange, onSpecialSkillChange }) {
   return (
     <section className="form-section">
-      <h2>Section 2B: Five Foundational Questions</h2>
-      <p className="section-intro">Write clear answers to these questions after one year.</p>
+      <h2>Part 1-B: Five Fundamental Questions</h2>
+      <p className="section-intro">Provide clear answers after one year of study.</p>
       {FIVE_QUESTIONS.map((q) => (
         <div className="text-question-block" key={q.key}>
           <h3>{q.label}</h3>
           <label className="field">
-            <span>One-year answer</span>
+            <span>My clear answer after one year</span>
             <textarea
               rows={2}
               value={data[q.key].answer}
@@ -18,7 +18,7 @@ export default function Section2BQuestions({ data, specialSkill, onChange, onSpe
             />
           </label>
           <label className="field">
-            <span>Practical evidence (last 30 days)</span>
+            <span>Practical evidence from the past 30 days</span>
             <textarea
               rows={2}
               value={data[q.key].evidence}
@@ -26,7 +26,7 @@ export default function Section2BQuestions({ data, specialSkill, onChange, onSpe
             />
           </label>
           <label className="field">
-            <span>Remaining gaps</span>
+            <span>Remaining gap</span>
             <textarea
               rows={2}
               value={data[q.key].gaps}
@@ -37,9 +37,8 @@ export default function Section2BQuestions({ data, specialSkill, onChange, onSpe
       ))}
 
       <div className="text-question-block">
-        <h3>Special Question</h3>
+        <h3>One capability from my degree/field that can be linked to Khair, justice, or service during the next four months:</h3>
         <label className="field">
-          <span>One skill or competency in my field that can be aligned with benefit (khair), justice (adl), or service in the next four months:</span>
           <textarea rows={2} value={specialSkill} onChange={(e) => onSpecialSkillChange(e.target.value)} />
         </label>
       </div>

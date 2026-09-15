@@ -5,11 +5,9 @@ import { QURAN_RATINGS, SIX_STAGES } from "../data/formOptions";
 export default function Section3AQuranRatings({ ratings, onRatingChange, stages, onStageChange, reflection, onReflectionChange }) {
   return (
     <section className="form-section">
-      <h2>Section 3: Quranic Intellectual Development (77 Meccan Chapters)</h2>
+      <h2>Section 3: Qur'anic Intellectual Development</h2>
       <p className="section-intro">
-        The Quran built first: certainty in God (Ma'rifat-e-Rabb) and belief in the afterlife (Aakhirat), then
-        corrected worldly values, built character and purification, shaped the caller's personality, and gave
-        responsibility for the community and humanity.
+        The 77 Surahs were not meant to produce 77 isolated summaries. Through the chronological/nuzooli journey, the Qur'an first built: Ma'rifat of the Rabb; Certainty of the Hereafter; Correction of false worldly standards; Character and Tazkiyah; The personality of the Da'i; Responsibility toward the Ummah and humanity.
       </p>
 
       {QURAN_RATINGS.map((q, i) => (
@@ -21,7 +19,7 @@ export default function Section3AQuranRatings({ ratings, onRatingChange, stages,
         </div>
       ))}
 
-      <h3 className="subheading">Six Stages of Quranic Development — Practical Evidence</h3>
+      <h3 className="subheading">Part 2-B — Six Stages — Observable evidence</h3>
       {SIX_STAGES.map((s) => (
         <div className="text-question-block" key={s.key}>
           <h4>{s.title}</h4>
@@ -38,10 +36,10 @@ export default function Section3AQuranRatings({ ratings, onRatingChange, stages,
       ))}
 
       <div className="text-question-block">
-        <h3>Reflection Question</h3>
+        <h3>Part 2-B — Reflection</h3>
         <label className="field">
-          <span>Which Meccan chapter or theme changed your life's measure most, and what's the evidence?</span>
-          <textarea rows={3} value={reflection} onChange={(e) => onReflectionChange(e.target.value)} />
+          <span>One Makki Surah/theme that most changed my standard of life:</span>
+          <textarea rows={2} value={reflection} onChange={(e) => onReflectionChange(e.target.value)} />
         </label>
       </div>
     </section>

@@ -2,22 +2,22 @@
 // Keeping labels/options here keeps the section components declarative.
 
 export const RATING_LEVELS = [
-  { value: 0, desc: "Issue is not clear" },
-  { value: 1, desc: "Information only (facts known)" },
-  { value: 2, desc: "Thought or preference changed" },
-  { value: 3, desc: "Action/behavior has begun" },
-  { value: 4, desc: "Established character and clear evidence" },
+  { value: 0, desc: "The matter is not clear" },
+  { value: 1, desc: "Information — I know the concept" },
+  { value: 2, desc: "Insight — My thinking, judgement, or priorities have changed" },
+  { value: 3, desc: "Practice — I have begun applying it in real life" },
+  { value: 4, desc: "Character — It has become consistent and there is clear evidence" },
 ];
 
 export const FOUNDATIONAL_QUESTIONS = [
-  { key: "q1", text: "I can clearly explain that my degree is not only job preparation, but also fulfills a human need and is a trust (amanat) from Allah." },
-  { key: "q2", text: "I have clear answers to five key questions: Who am I? Why do I live? What is success? What is my ability for? To whom am I accountable?" },
-  { key: "q3", text: "I don't measure success only by grades, salary, position, or social status—also by halal livelihood, integrity, benefit to others, and Allah's pleasure." },
-  { key: "q4", text: "I can identify at least one ethical issue in my field and explain the Quranic basis for the right decision." },
-  { key: "q5", text: "My religious life and professional life are not separate; I feel accountable to Allah in class, internship, work, business, and research." },
-  { key: "q6", text: "I can explain how what I learned progressed from information → thought → insight → practice → character." },
-  { key: "q7", text: "In the last 30 days, my education benefited a real person, organization, or issue in a way I can demonstrate." },
-  { key: "q8", text: "When I make mistakes, face failure, or feel pressure, I accept responsibility and seek improvement instead of making excuses." },
+  { key: "q1", text: "My degree is not only preparation for a job; I see my ability as a means of meeting human needs and as an amanah from Allah." },
+  { key: "q2", text: "I have clear answers to these five questions: Who am I? Why am I living? What is my success? For whom should I use my abilities? Before whom am I accountable?" },
+  { key: "q3", text: "I do not measure success only through marks, salary/package, status, or outward achievement. I also consider halal means, integrity, benefit to others, and the pleasure of Allah." },
+  { key: "q4", text: "I can identify at least one ethical issue in my own field and explain the Qur'anic basis for making the correct decision." },
+  { key: "q5", text: "My religious and professional life are not separate. I feel accountability before Allah in my class, internship, workplace, business, research, and professional decisions." },
+  { key: "q6", text: "I can explain how something I learned moved from information to thought, insight, practice, and character." },
+  { key: "q7", text: "During the past 30 days, my education/knowledge has benefited a person, institution, or problem, and I can give a clear example." },
+  { key: "q8", text: "When I make a mistake or face failure or pressure, instead of making excuses, I accept my shortcoming, correct it, and start again." },
 ];
 
 export const FIVE_QUESTIONS = [
@@ -29,66 +29,66 @@ export const FIVE_QUESTIONS = [
 ];
 
 export const QURAN_RATINGS = [
-  { key: "qr1", label: "Knowledge of God (Ma'rifat-e-Rabb)", text: "I understand my ability, provision, success, and protection not as my effort alone, but as Allah's gift and trust." },
-  { key: "qr2", label: "Connection with Allah", text: "Prayer, Quran, remembrance, supplication, gratitude, and trust are practical support in my pressure, fear, and decisions." },
-  { key: "qr3", label: "Afterlife orientation (Aakhirat)", text: "When immediate benefit competes with final outcome, I weigh the afterlife as the decisive factor." },
-  { key: "qr4", label: "Correcting false standards", text: "Money, relationships, power, outward success, people's praise, and comfort no longer measure my worth or success." },
-  { key: "qr5", label: "Self-purification (Tazkiya)", text: "I recognize my dominant desire, weakness, or wrong thinking and deliberately practice against it." },
-  { key: "qr6", label: "Character (Kirdar)", text: "I have seen one-year progress in honesty, trust, modesty, patience, respecting rights, and self-control." },
-  { key: "qr7", label: "Surah Ta Ha (Ch. 20) lesson", text: "Before calling to God, I understand the need for connection with Allah, prayer, remembrance, afterlife weight, and protection from worldly distraction." },
-  { key: "qr8", label: "Surah Ash-Shu'ara (Ch. 26) lesson", text: "Instead of general advice, I identify specific corruption in my environment and understand reform with sincerity and trust." },
-  { key: "qr9", label: "Surah An-Naml (Ch. 27) lesson", text: "I link knowledge, strength, platform, or leadership to gratitude, fact-checking, hearing the weak's voice, and guidance toward Allah." },
-  { key: "qr10", label: "Surah Al-Qasas (Ch. 28) lesson", text: "Despite weakness and delay, I keep trusting Allah's management while maintaining my effort and responsibility." },
-  { key: "qr11", label: "Calling/da'i responsibility", text: "I don't just attend religious programs; I take ongoing responsibility for one person, circle, or cause." },
-  { key: "qr12", label: "Community consciousness (Ummah)", text: "I link my degree, time, and relationships not just to personal progress but to family, community, and humanity's welfare." },
+  { key: "qr1", label: "Ma'rifat-e-Rabb", text: "I see my ability, provision, success, and protection as gifts and amanah from Allah, rather than seeing them only as the result of my own effort." },
+  { key: "qr2", label: "Relationship with Allah", text: "Salah, Qur'an, Dhikr, Dua, Shukr, and Tawakkul provide me with practical support during pressure, fear, and decision-making." },
+  { key: "qr3", label: "Hereafter Priority", text: "When immediate benefit conflicts with the final outcome, I give decisive weight to the Hereafter." },
+  { key: "qr4", label: "Correction of False Standards", text: "Wealth, relationships, power, outward success, praise, and comfort are no longer my final standards of worth and success." },
+  { key: "qr5", label: "Tazkiyah", text: "I can identify my dominant desire, weakness, or wrong thought and I consciously practice going against it." },
+  { key: "qr6", label: "Character", text: "I can show sustained change during the past year in areas such as truthfulness, amanah, haya, sabr, fulfilling rights, and self-control." },
+  { key: "qr7", label: "Surah Ta-Ha", text: "I understand that before undertaking Da'wah, there is a need for a strong relationship with Allah, prayer and Dhikr, weight of the Hereafter, and protection from the attraction of worldly life." },
+  { key: "qr8", label: "Surah Ash-Shu'ara", text: "I can diagnose specific forms of corruption in my environment instead of giving only general advice, and I approach reform with sincerity and amanah." },
+  { key: "qr9", label: "Surah An-Naml", text: "I can connect knowledge, power, platform, and leadership with gratitude to Allah, verification of information, giving a voice to the weak, and guiding people toward Allah." },
+  { key: "qr10", label: "Surah Al-Qasas", text: "Even in situations of weakness and delay, I trust Allah's plan while continuing my preparation and fulfilling my responsibility." },
+  { key: "qr11", label: "Da'wah Responsibility", text: "I do not merely attend programmes. I take sustained responsibility for at least one person, group, or beneficial work." },
+  { key: "qr12", label: "Ummah Consciousness", text: "I connect my degree, time, and relationships not only with my personal growth but also with the good of my family, the Ummah, and humanity." },
 ];
 
 export const SIX_STAGES = [
-  { key: "stage1", title: "Knowledge of God & Connection", whatChanged: "Heart's focus, worship, gratitude, trust" },
-  { key: "stage2", title: "Afterlife Priority", whatChanged: "Immediate benefit vs. final outcome awareness" },
-  { key: "stage3", title: "Correcting False Standards", whatChanged: "Money, status, power, comfort placed correctly" },
-  { key: "stage4", title: "Purification & Character", whatChanged: "Desire cultivation and consistent ethics" },
-  { key: "stage5", title: "Caller's Personality", whatChanged: "Connection to God, sincerity, patience, wisdom" },
-  { key: "stage6", title: "Community & Humanity", whatChanged: "Ability, time, relationships for collective welfare" },
+  { key: "stage1", title: "Ma'rifat-e-Rabb and Relationship with Allah", whatChanged: "The heart becomes centred on Allah, worship, gratitude, and Tawakkul" },
+  { key: "stage2", title: "Hereafter Priority", whatChanged: "Awareness of the final outcome becomes stronger than immediate benefit" },
+  { key: "stage3", title: "Correction of False Standards", whatChanged: "Wealth, status, relationships, power, and comfort are placed in their correct position" },
+  { key: "stage4", title: "Tazkiyah and Character", whatChanged: "Desires are trained and ethical behaviour becomes consistent" },
+  { key: "stage5", title: "Da'i Personality", whatChanged: "Connection with Allah, sincerity, patience, and wisdom develop" },
+  { key: "stage6", title: "Ummah and Humanity", whatChanged: "Responsibility for good is carried through ability, time, and relationships" },
 ];
 
 export const SEERAH_STAGES = [
-  { key: "seerah1", title: "1. Divine Revelation & Initial Preparation", method: "Iqra (read) = knowledge source; Muzzammil (night vigil) = worship & preparation; Muddassir (clothed one) = rising and warning responsibility", result: "Strong personality & clear mission" },
-  { key: "seerah2", title: "2. Trustworthy Individuals Phase", method: "Personal reliability, tested character, individual recognition, one-to-one relationships", result: "Small but responsible initial group" },
-  { key: "seerah3", title: "3. Organized Training at Dar-e-Arqam", method: "Quran, companionship, worship, safe space, mutual bonds, ongoing responsibility", result: "Individuals become a trained community" },
-  { key: "seerah4", title: "4. Public Preaching & Intellectual Challenge", method: "Tawheed (monotheism), afterlife, equality, rights through evidence and ethics; challenging Mecca's wrong worldview", result: "Truth vs. falsehood become clear; calling becomes public" },
-  { key: "seerah5", title: "5. Protecting Faith During Persecution", method: "Patience with changing circumstances, strategic migration (Habasha), practical wisdom", result: "Believers safe; message spreads beyond Mecca" },
-  { key: "seerah6", title: "6. Boycott & Internal Unity", method: "Sacrifice, internal cohesion, mutual help, benefiting from fair-minded dissidents", result: "Community holds firm; boycott fails" },
-  { key: "seerah7", title: "7. Taif & New Direction Search", method: "After outward failure: mercy, hope, travel, new paths", result: "Mission expands beyond Mecca's boundaries" },
-  { key: "seerah8", title: "8. Yasrib Tribes & New Foundation", method: "Sustained contact, Baiat-e-Aqaba (oath of allegiance), Musab's training & migration, local individuals & families ready", result: "Social acceptance and foundation built" },
-  { key: "seerah9", title: "9. Migration & Medina-Phase Preparation", method: "Individuals, environment, leadership, time, confidentiality, division of responsibilities, complete planning", result: "Meccan preparation enters the Medina community-building phase" },
+  { key: "seerah1", title: "Stage 1 — Revelation, Mission and Initial Preparation", method: "Iqra — Source of knowledge; Muzzammil — Worship and preparation; Muddaththir — Rise, warn, and take responsibility", result: "A strong personality with a clear mission" },
+  { key: "seerah2", title: "Stage 2 — Da'wah to Trustworthy Individuals", method: "Personal trust; Previous character; Knowing the individual; One-to-one connection", result: "A small group of responsible initial individuals" },
+  { key: "seerah3", title: "Stage 3 — Structured Tarbiyah at Dar al-Arqam", method: "Qur'an; Companionship; Worship; Safe space; Mutual relationships; Sustained responsibility", result: "A trained community" },
+  { key: "seerah4", title: "Stage 4 — Public Da'wah and Intellectual Confrontation", method: "Tawheed; Hereafter; Equality; Rights. The wrong mindset of Makkah was challenged through evidence and character", result: "Truth and falsehood became clear, and Da'wah became a public issue" },
+  { key: "seerah5", title: "Stage 5 — Protecting Faith and Da'wah under Oppression", method: "Sabr; Protection according to circumstances; Migration to Habasha; Strategy", result: "People were protected and Da'wah moved beyond Makkah" },
+  { key: "seerah6", title: "Stage 6 — Boycott and Collective Steadfastness", method: "Sacrifice; Internal unity; Mutual support; Using the conscience of fair-minded people", result: "The group remained intact and the boycott failed" },
+  { key: "seerah7", title: "Stage 7 — Ta'if and Search for a New Direction", method: "No revenge after apparent failure; Mercy; Hope; Travel; Searching for new avenues", result: "The mission expanded beyond Makkah" },
+  { key: "seerah8", title: "Stage 8 — Tribes of Yathrib and a New Foundation", method: "Sustained contact; Bay'at al-'Aqabah; Training and sending Mus'ab RA; Preparing the local people and families", result: "A social base was established" },
+  { key: "seerah9", title: "Stage 9 — Hijrah and Preparation for Madinan Construction", method: "People; Environment; Leadership; Timing; Secrecy; Division of responsibility; Planning", result: "Makki preparation entered the stage of collective construction" },
 ];
 
 export const TRANSFORMATION_DIMENSIONS = [
-  { key: "trans1", title: "Knowledge & Learning", need: "Convey correct knowledge into thought, insight, and character" },
-  { key: "trans2", title: "Quranic Thinking", need: "Decide from God, afterlife, and right standards" },
-  { key: "trans3", title: "Personal Character", need: "Stand by principles amid desire, time pressure, and stress" },
-  { key: "trans4", title: "Professional Trust", need: "Link ability to halal, justice, and service" },
-  { key: "trans5", title: "Seerah Operational Understanding", need: "Understand stages, methods, results, and next foundation" },
-  { key: "trans6", title: "Calling Responsibility", need: "Recognize people, provide training, take ongoing work" },
+  { key: "trans1", title: "Knowledge & Education", need: "I am becoming someone who takes sound knowledge beyond information and moves it toward thought, insight, and character" },
+  { key: "trans2", title: "Qur'anic Thought", need: "I make decisions according to my Rabb, the Hereafter, and correct standards of success" },
+  { key: "trans3", title: "Personal Character", need: "I remain principled even under desire, time pressure, relationships, and stress" },
+  { key: "trans4", title: "Professional Amanah", need: "I connect my skills with halal, justice, and service" },
+  { key: "trans5", title: "Practical Understanding of Seerah", need: "I understand the Seerah according to its stages, methods, results, and the foundations required for the next stage" },
+  { key: "trans6", title: "Da'wah Responsibility", need: "I identify people, nurture them, and carry sustained responsibility for beneficial work" },
 ];
 
 export const CURRENT_STATE_OPTIONS = [
-  "Information only (facts known)",
-  "Thought (understanding developed)",
-  "Insight (deeper perception)",
-  "Practicing (action taken)",
-  "Character (consistent behavior)",
+  "Information",
+  "Thought",
+  "Insight",
+  "Occasional Practice",
+  "Consistent Character",
 ];
 
 export const OBSTACLE_OPTIONS = [
-  "Concepts not clear",
-  "Quranic thinking hasn't penetrated the heart",
-  "Religious and career life feel separate",
-  "Time management lacking",
-  "Practical method unclear",
-  "Consistent practice missing",
-  "Environment is overwhelming",
-  "Responsibility not defined",
-  "Follow-up support lacking",
+  "The concept is unclear",
+  "Qur'anic thought has not entered my heart",
+  "Religion and career remain separate",
+  "My time system is lacking",
+  "The practical method is unclear",
+  "My practice is inconsistent",
+  "My environment dominates me",
+  "My responsibility is not defined",
+  "Follow-up is weak",
 ];

@@ -15,8 +15,8 @@ export default function Section1BasicInfo({ data, onChange }) {
 
   return (
     <section className="form-section">
-      <h2>Section 1: Basic Information</h2>
-      <p className="section-intro">Provide foundational participant details.</p>
+      <h2>Basic Information</h2>
+      <p className="section-intro">Participant details.</p>
       <div className="field-grid">
         {field("name", "Name", "text", true)}
         {field("age", "Age", "number")}

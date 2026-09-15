@@ -5,8 +5,8 @@ import { FOUNDATIONAL_QUESTIONS, RATING_LEVELS } from "../data/formOptions";
 export default function Section2ARatings({ data, onChange }) {
   return (
     <section className="form-section">
-      <h2>Section 2A: Foundational Understanding</h2>
-      <p className="section-intro">Based on the first year concept, choose your own rating.</p>
+      <h2>Section 2A: Professional Education + Qur'anic Curriculum</h2>
+      <p className="section-intro">Rate yourself from 0–4.</p>
       <div className="scale-legend">
         {RATING_LEVELS.map((l) => (
           <span key={l.value}>{l.value} = {l.desc}</span>
